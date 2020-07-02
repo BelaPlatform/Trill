@@ -1,0 +1,611 @@
+<PSOC_DEVICE_DB>
+	<PSOC_CONFIG_LIST>
+		<PSOC_CONFIG NAME="trill_ring" BASE_DEVICE="CY8C20636AN" SOURCE_GEN_TIME="1583424785" CONFIG_SAVE_TIME="1583428695" CONFIG_SAVE_DATE="Thu Mar 05 09:18:15 2020
+" VERSION="4.0" DESCRIPTION="" PACKAGE_TYPE="QFN" PACKAGE_SHAPE="4" LOOP_CONFIG_INIT="Enable" UM_INT_GEN_CONTROL="Disable" CONFIG_NAME_PREPEND="Enable" DESIGN_VERSION="" DOC_FILENAME="" DEVICE_DISPLAY_NAME="CY8C20636AN-24LTXI" PSOC_EXPRESS_PROJECT="FALSE">
+			<DESIGN_FILE_LIST/>
+			<USER_MODULE_LIST>
+				<USER_MODULE NAME="CSD" INSTANCE_NAME="CSD" VERSION="2.10">
+					<SHAPE SHAPE_TYPE="BLOCKLIST" COLOR_INDEX="0" NAME="CSD20066" LOCKED="FALSE">
+						<RESOURCE_LIST>
+							<RESOURCE NAME="AnalogInterrupt" TYPE="ANALOG_INTERRUPT" DEVICE_RESOURCE_NAME="AnalogInterrupt"/>
+							<RESOURCE NAME="CAPSENSE" TYPE="CSR_MUX_RESOURCE" DEVICE_RESOURCE_NAME="CAPSENSE"/>
+							<RESOURCE NAME="Comparator" TYPE="ANALOG_COMPARATOR" DEVICE_RESOURCE_NAME="Comparator0"/>
+							<RESOURCE NAME="ComparatorCapSenseMUX0" TYPE="ANALOG_COMPARATOR_CAP_SENSE_MUX" DEVICE_RESOURCE_NAME="ComparatorCapSenseMUX0"/>
+							<RESOURCE NAME="ComparatorLUT0" TYPE="ANALOG_COMPARATOR_LUT" DEVICE_RESOURCE_NAME="ComparatorLUT0"/>
+							<RESOURCE NAME="ComparatorNegInput" TYPE="ANALOG_COMPARATOR_NEGATIVE_MUX" DEVICE_RESOURCE_NAME="ComparatorNegInput0"/>
+							<RESOURCE NAME="ComparatorPosInput" TYPE="ANALOG_COMPARATOR_POSITIVE_MUX" DEVICE_RESOURCE_NAME="ComparatorPosInput0"/>
+							<RESOURCE NAME="LPF" TYPE="ANALOG_LPF" DEVICE_RESOURCE_NAME="LPF"/>
+							<RESOURCE NAME="TIMER" TYPE="TIMER_RESOURCE" DEVICE_RESOURCE_NAME="TIMER1"/>
+						</RESOURCE_LIST>
+					</SHAPE>
+					<PARAMETER_LIST>
+						<PARAMETER NAME="Autocalibration" VALUE="Enabled"/>
+						<PARAMETER NAME="BaselineUpdateThreshold" VALUE="100"/>
+						<PARAMETER NAME="Debounce" VALUE="3"/>
+						<PARAMETER NAME="DiplexPointerTable" VALUE="	db &gt;DiplexTable_0, &lt;DiplexTable_0
+	db &gt;DiplexTable_1, &lt;DiplexTable_1
+"/>
+						<PARAMETER NAME="DiplexTable" VALUE="DiplexTable_0:
+; This group is not a diplexed slider
+DiplexTable_1:
+; This group is not a diplexed slider
+"/>
+						<PARAMETER NAME="DiplexUsed" VALUE="0"/>
+						<PARAMETER NAME="FingerThreshold" VALUE="60"/>
+						<PARAMETER NAME="GroupTable" VALUE="; Group Table:
+;    Origin    Count    Diplex?    DivBtwSw(wholeMSB, wholeLSB, fractByte)
+ db   0x0,      0x00,	 0x00,	 0x00,	 0x00,	 0x00 ; Buttons
+ db   0x00,	    0x1E,	 0x00,	 0x00,	 0x46,	 0x96 ; Slider 1
+"/>
+						<PARAMETER NAME="Hysteresis" VALUE="10"/>
+						<PARAMETER NAME="Idac Range" VALUE="4x"/>
+						<PARAMETER NAME="IntDispatchMode" VALUE="ActiveStatus"/>
+						<PARAMETER NAME="InterruptAPI" VALUE="Enable"/>
+						<PARAMETER NAME="LowBaselineReset" VALUE="50"/>
+						<PARAMETER NAME="Modulator Capacitor Pin" VALUE="P0[1]"/>
+						<PARAMETER NAME="NMux" VALUE="VREF"/>
+						<PARAMETER NAME="NegativeNoiseThreshold" VALUE="10"/>
+						<PARAMETER NAME="NoiseThreshold" VALUE="40"/>
+						<PARAMETER NAME="PMux" VALUE="AnalogMUXBus"/>
+						<PARAMETER NAME="PRS Resolution" VALUE="8 bit"/>
+						<PARAMETER NAME="PrechargeSource" VALUE="Prescaler"/>
+						<PARAMETER NAME="Prescaler" VALUE="2"/>
+						<PARAMETER NAME="Resolution" VALUE="12"/>
+						<PARAMETER NAME="RotarySwitchCount" VALUE="0"/>
+						<PARAMETER NAME="SW0" VALUE="Port_3_3"/>
+						<PARAMETER NAME="SW1" VALUE="Port_3_1"/>
+						<PARAMETER NAME="SW10" VALUE="Port_2_2"/>
+						<PARAMETER NAME="SW11" VALUE="Port_2_4"/>
+						<PARAMETER NAME="SW12" VALUE="Port_2_6"/>
+						<PARAMETER NAME="SW13" VALUE="Port_0_0"/>
+						<PARAMETER NAME="SW14" VALUE="Port_0_2"/>
+						<PARAMETER NAME="SW15" VALUE="Port_0_4"/>
+						<PARAMETER NAME="SW16" VALUE="Port_0_6"/>
+						<PARAMETER NAME="SW17" VALUE="Port_0_7"/>
+						<PARAMETER NAME="SW18" VALUE="Port_0_5"/>
+						<PARAMETER NAME="SW19" VALUE="Port_0_3"/>
+						<PARAMETER NAME="SW2" VALUE="Port_1_7"/>
+						<PARAMETER NAME="SW20" VALUE="Port_2_7"/>
+						<PARAMETER NAME="SW21" VALUE="Port_2_5"/>
+						<PARAMETER NAME="SW22" VALUE="Port_2_3"/>
+						<PARAMETER NAME="SW23" VALUE="Port_2_1"/>
+						<PARAMETER NAME="SW24" VALUE="Port_4_3"/>
+						<PARAMETER NAME="SW25" VALUE="Port_4_1"/>
+						<PARAMETER NAME="SW26" VALUE="Port_3_7"/>
+						<PARAMETER NAME="SW27" VALUE="Port_3_5"/>
+						<PARAMETER NAME="SW28" VALUE="Port_1_3"/>
+						<PARAMETER NAME="SW29" VALUE="Port_1_5"/>
+						<PARAMETER NAME="SW3" VALUE="Port_3_0"/>
+						<PARAMETER NAME="SW30" VALUE="None"/>
+						<PARAMETER NAME="SW31" VALUE="None"/>
+						<PARAMETER NAME="SW32" VALUE="None"/>
+						<PARAMETER NAME="SW33" VALUE="None"/>
+						<PARAMETER NAME="SW34" VALUE="None"/>
+						<PARAMETER NAME="SW35" VALUE="None"/>
+						<PARAMETER NAME="SW4" VALUE="Port_3_2"/>
+						<PARAMETER NAME="SW5" VALUE="Port_3_4"/>
+						<PARAMETER NAME="SW6" VALUE="Port_3_6"/>
+						<PARAMETER NAME="SW7" VALUE="Port_4_0"/>
+						<PARAMETER NAME="SW8" VALUE="Port_4_2"/>
+						<PARAMETER NAME="SW9" VALUE="Port_2_0"/>
+						<PARAMETER NAME="Scanning Speed" VALUE="Ultra Fast"/>
+						<PARAMETER NAME="Sensors Autoreset" VALUE="Disabled"/>
+						<PARAMETER NAME="ShieldElectrodeOut" VALUE="None"/>
+						<PARAMETER NAME="SliderDiplex_0" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_1" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_10" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_11" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_2" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_3" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_4" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_5" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_6" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_7" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_8" VALUE="0"/>
+						<PARAMETER NAME="SliderDiplex_9" VALUE="0"/>
+						<PARAMETER NAME="SliderOutputResolution_0" VALUE="2048"/>
+						<PARAMETER NAME="SliderOutputResolution_1" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_10" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_11" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_2" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_3" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_4" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_5" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_6" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_7" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_8" VALUE="1"/>
+						<PARAMETER NAME="SliderOutputResolution_9" VALUE="1"/>
+						<PARAMETER NAME="SliderResolutionTable" VALUE="dw 0x800
+"/>
+						<PARAMETER NAME="SliderSwitchCount" VALUE="1"/>
+						<PARAMETER NAME="SwitchCount" VALUE="0"/>
+						<PARAMETER NAME="SwitchTable" VALUE="	dw	0x0308	// Port 3 Bit 3
+	dw	0x0302	// Port 3 Bit 1
+	dw	0x0180	// Port 1 Bit 7
+	dw	0x0301	// Port 3 Bit 0
+	dw	0x0304	// Port 3 Bit 2
+	dw	0x0310	// Port 3 Bit 4
+	dw	0x0340	// Port 3 Bit 6
+	dw	0x0401	// Port 4 Bit 0
+	dw	0x0404	// Port 4 Bit 2
+	dw	0x0201	// Port 2 Bit 0
+	dw	0x0204	// Port 2 Bit 2
+	dw	0x0210	// Port 2 Bit 4
+	dw	0x0240	// Port 2 Bit 6
+	dw	0x0001	// Port 0 Bit 0
+	dw	0x0004	// Port 0 Bit 2
+	dw	0x0010	// Port 0 Bit 4
+	dw	0x0040	// Port 0 Bit 6
+	dw	0x0080	// Port 0 Bit 7
+	dw	0x0020	// Port 0 Bit 5
+	dw	0x0008	// Port 0 Bit 3
+	dw	0x0280	// Port 2 Bit 7
+	dw	0x0220	// Port 2 Bit 5
+	dw	0x0208	// Port 2 Bit 3
+	dw	0x0202	// Port 2 Bit 1
+	dw	0x0408	// Port 4 Bit 3
+	dw	0x0402	// Port 4 Bit 1
+	dw	0x0380	// Port 3 Bit 7
+	dw	0x0320	// Port 3 Bit 5
+	dw	0x0108	// Port 1 Bit 3
+	dw	0x0120	// Port 1 Bit 5
+"/>
+						<PARAMETER NAME="SwitchesPerSlider_0" VALUE="30"/>
+						<PARAMETER NAME="SwitchesPerSlider_1" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_10" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_11" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_2" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_3" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_4" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_5" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_6" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_7" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_8" VALUE="1"/>
+						<PARAMETER NAME="SwitchesPerSlider_9" VALUE="1"/>
+						<PARAMETER NAME="TotalSwitchCount" VALUE="30"/>
+						<PARAMETER NAME="iDAC Value" VALUE="20"/>
+					</PARAMETER_LIST>
+				</USER_MODULE>
+				<USER_MODULE NAME="EzI2Cs" INSTANCE_NAME="EzI2Cs" VERSION="1.40">
+					<SHAPE SHAPE_TYPE="BLOCKLIST" COLOR_INDEX="1" NAME="EzI2Cs20" LOCKED="FALSE">
+						<RESOURCE_LIST>
+							<RESOURCE NAME="Comm" TYPE="DIGITAL_COMM" DEVICE_RESOURCE_NAME="I2C/SPI"/>
+							<RESOURCE NAME="I2C" TYPE="I2C_CONTROLLER" DEVICE_RESOURCE_NAME="I2C"/>
+						</RESOURCE_LIST>
+					</SHAPE>
+					<PARAMETER_LIST>
+						<PARAMETER NAME="Address_Type" VALUE="Dynamic"/>
+						<PARAMETER NAME="CY8C20xx7" VALUE="0"/>
+						<PARAMETER NAME="HW Addr Rec" VALUE="Disable"/>
+						<PARAMETER NAME="I2C Clock" VALUE="400K Fast"/>
+						<PARAMETER NAME="I2C Pin" VALUE="P[1]0-P[1]1"/>
+						<PARAMETER NAME="I2C_Port" VALUE="Port_1"/>
+						<PARAMETER NAME="IntDispatchMode" VALUE="ActiveStatus"/>
+						<PARAMETER NAME="ROM_Registers" VALUE="Disable"/>
+						<PARAMETER NAME="Slave_Addr" VALUE="0"/>
+					</PARAMETER_LIST>
+				</USER_MODULE>
+				<USER_MODULE NAME="Timer16" INSTANCE_NAME="Timer16_1" VERSION="1.1">
+					<SHAPE SHAPE_TYPE="BLOCKLIST" COLOR_INDEX="2" NAME="Timer1620" LOCKED="FALSE">
+						<RESOURCE_LIST>
+							<RESOURCE NAME="TIMER" TYPE="TIMER_RESOURCE" DEVICE_RESOURCE_NAME="TIMER0"/>
+						</RESOURCE_LIST>
+					</SHAPE>
+					<PARAMETER_LIST>
+						<PARAMETER NAME="Clock Select" VALUE="32KHz"/>
+						<PARAMETER NAME="IntDispatchMode" VALUE="ActiveStatus"/>
+						<PARAMETER NAME="Int_CLR_MASK" VALUE="IntCLR1_REG_TIMER0"/>
+						<PARAMETER NAME="Int_CLR_REG_ADDR" VALUE="IntCLR1_REG_TIMER0"/>
+						<PARAMETER NAME="InterruptAPI" VALUE="Enable"/>
+						<PARAMETER NAME="Mode" VALUE="Continuous"/>
+						<PARAMETER NAME="Period" VALUE="0001"/>
+					</PARAMETER_LIST>
+				</USER_MODULE>
+			</USER_MODULE_LIST>
+			<USER_MODULE_GROUP_LIST/>
+			<DEVICE_DATA>
+				<GLOBAL_RESOURCE_LIST>
+					<RESOURCE NAME="32K_Select" VALUE="Internal"/>
+					<RESOURCE NAME="CPU_Clock" VALUE="SysClk/1"/>
+					<RESOURCE NAME="ILO Setting" VALUE="32kHz"/>
+					<RESOURCE NAME="IMO Setting" VALUE="24MHz"/>
+					<RESOURCE NAME="Interrupt Mode" VALUE="Low"/>
+					<RESOURCE NAME="LVDThrottleBack" VALUE="Disable"/>
+					<RESOURCE NAME="P1[0] Data Output" VALUE="Disable"/>
+					<RESOURCE NAME="P1[2] Data Output" VALUE="Disable"/>
+					<RESOURCE NAME="P1[4] Data Output" VALUE="Disable"/>
+					<RESOURCE NAME="P1[6] Data Output" VALUE="Disable"/>
+					<RESOURCE NAME="POR Voltage" VALUE="1.66V"/>
+					<RESOURCE NAME="Sleep_Timer" VALUE="512_Hz"/>
+					<RESOURCE NAME="SysClk Source" VALUE="Internal"/>
+					<RESOURCE NAME="Trip Voltage [LVD]" VALUE="4.73V"/>
+					<RESOURCE NAME="Watchdog Enable" VALUE="Disable"/>
+				</GLOBAL_RESOURCE_LIST>
+				<RESERVED_RESOURCE_LIST>
+					<RESOURCE NAME="" VALUE="" TYPE=""/>
+					<RESOURCE NAME="AnalogInterrupt" VALUE="Disable" TYPE="ANALOG_INTERRUPT"/>
+					<RESOURCE NAME="AnalogMUXBus" VALUE="" TYPE="ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="BusReset" VALUE="" TYPE="USB_BUS_RESET"/>
+					<RESOURCE NAME="CAPSENSE" VALUE="" TYPE="CSR_MUX_RESOURCE"/>
+					<RESOURCE NAME="Comparator0" VALUE="" TYPE="ANALOG_COMPARATOR"/>
+					<RESOURCE NAME="Comparator1" VALUE="" TYPE="ANALOG_COMPARATOR"/>
+					<RESOURCE NAME="ComparatorCapSenseMUX0" VALUE="ComparatorLUT0" TYPE="ANALOG_COMPARATOR_CAP_SENSE_MUX"/>
+					<RESOURCE NAME="ComparatorCapSenseMUX1" VALUE="ComparatorLUT1" TYPE="ANALOG_COMPARATOR_CAP_SENSE_MUX"/>
+					<RESOURCE NAME="ComparatorLUT0" VALUE="A" TYPE="ANALOG_COMPARATOR_LUT"/>
+					<RESOURCE NAME="ComparatorLUT1" VALUE="A" TYPE="ANALOG_COMPARATOR_LUT"/>
+					<RESOURCE NAME="ComparatorLatchResetMUX0" VALUE="Reg Write" TYPE="ANALOG_COMPARATOR_LATCH_RESET_MUX"/>
+					<RESOURCE NAME="ComparatorLatchResetMUX1" VALUE="Reg Write" TYPE="ANALOG_COMPARATOR_LATCH_RESET_MUX"/>
+					<RESOURCE NAME="ComparatorNegInput0" VALUE="VREF" TYPE="ANALOG_COMPARATOR_NEGATIVE_MUX"/>
+					<RESOURCE NAME="ComparatorNegInput1" VALUE="VREF" TYPE="ANALOG_COMPARATOR_NEGATIVE_MUX"/>
+					<RESOURCE NAME="ComparatorPinMUX0" VALUE="ComparatorCapSenseMUX0" TYPE="ANALOG_COMPARATOR_PIN_MUX"/>
+					<RESOURCE NAME="ComparatorPinMUX1" VALUE="ComparatorCapSenseMUX1" TYPE="ANALOG_COMPARATOR_PIN_MUX"/>
+					<RESOURCE NAME="ComparatorPosInput0" VALUE="AnalogMUXBus" TYPE="ANALOG_COMPARATOR_POSITIVE_MUX"/>
+					<RESOURCE NAME="ComparatorPosInput1" VALUE="AnalogMUXBus" TYPE="ANALOG_COMPARATOR_POSITIVE_MUX"/>
+					<RESOURCE NAME="EPT0" VALUE="" TYPE="USB_EP0"/>
+					<RESOURCE NAME="EPT1" VALUE="" TYPE="USB_EP1"/>
+					<RESOURCE NAME="EPT2" VALUE="" TYPE="USB_EP2"/>
+					<RESOURCE NAME="EPT3" VALUE="" TYPE="USB_EP3"/>
+					<RESOURCE NAME="EPT4" VALUE="" TYPE="USB_EP4"/>
+					<RESOURCE NAME="EPT5" VALUE="" TYPE="USB_EP5"/>
+					<RESOURCE NAME="EPT6" VALUE="" TYPE="USB_EP6"/>
+					<RESOURCE NAME="EPT7" VALUE="" TYPE="USB_EP7"/>
+					<RESOURCE NAME="EPT8" VALUE="" TYPE="USB_EP8"/>
+					<RESOURCE NAME="I2C" VALUE="" TYPE="I2C_CONTROLLER"/>
+					<RESOURCE NAME="I2C/SPI" VALUE="" TYPE="DIGITAL_COMM"/>
+					<RESOURCE NAME="InternalCapacitor" VALUE="None" TYPE="CSR_CAP_RESOURCE"/>
+					<RESOURCE NAME="LPF" VALUE="None" TYPE="ANALOG_LPF"/>
+					<RESOURCE NAME="Port_0_0" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_0_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_0_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_0_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_0_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_1" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_1_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_1_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_1_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_1_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_2" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_2_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_2_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_2_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_2_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_3" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_3_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_3_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_3_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_3_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_4" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_4_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_4_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_4_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_4_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_5" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_5_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_5_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_5_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_5_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_6" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_6_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_6_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_6_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_6_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_7" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_7_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_0_7_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_7_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_7_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_0" VALUE="I2C SDA" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_0_AnalogMUXBus" VALUE="Normal" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_0_Drive" VALUE="Open Drain Low" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_0_InitialValue" VALUE="1" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_0_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_1" VALUE="I2C SCL" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_1_AnalogMUXBus" VALUE="Normal" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_1_Drive" VALUE="Open Drain Low" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_1_InitialValue" VALUE="1" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_1_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_2" VALUE="StdCPUInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_2_AnalogMUXBus" VALUE="Normal" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_2_Drive" VALUE="Pull Up" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_2_InitialValue" VALUE="1" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_2_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_3" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_3_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_3_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_3_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_3_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_4" VALUE="StdCPUInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_4_AnalogMUXBus" VALUE="Normal" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_4_Drive" VALUE="Pull Up" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_4_InitialValue" VALUE="1" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_4_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_5" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_5_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_5_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_5_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_5_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_6" VALUE="StdCPU" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_6_AnalogMUXBus" VALUE="Normal" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_6_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_6_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_6_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_7" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_7_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_1_7_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_7_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_7_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_0" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_0_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_0_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_0_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_0_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_1" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_1_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_1_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_1_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_1_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_2" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_2_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_2_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_2_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_2_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_3" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_3_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_3_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_3_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_3_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_4" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_4_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_4_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_4_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_4_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_5" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_5_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_5_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_5_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_5_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_6" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_6_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_6_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_6_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_6_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_7" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_7_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_2_7_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_7_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_7_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_0" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_0_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_0_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_0_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_0_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_1" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_1_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_1_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_1_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_1_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_2" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_2_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_2_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_2_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_2_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_3" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_3_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_3_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_3_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_3_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_4" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_4_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_4_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_4_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_4_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_5" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_5_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_5_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_5_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_5_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_6" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_6_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_6_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_6_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_6_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_7" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_7_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_3_7_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_7_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_3_7_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_0" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_0_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_4_0_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_0_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_0_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_1" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_1_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_4_1_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_1_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_1_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_2" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_2_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_4_2_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_2_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_2_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_3" VALUE="AnalogMUXInput" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_3_AnalogMUXBus" VALUE="AnalogMUXBus" TYPE="PIN_ANALOG_MUX_BUS"/>
+					<RESOURCE NAME="Port_4_3_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_3_InitialValue" VALUE="0" TYPE="PIN"/>
+					<RESOURCE NAME="Port_4_3_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="PrechargeSource" VALUE="PRS" TYPE="CSR_PRECHARGE_RESOURCE"/>
+					<RESOURCE NAME="SOF" VALUE="" TYPE="USB_SOF"/>
+					<RESOURCE NAME="SPCInterrupt" VALUE="" TYPE="SPC_INTERRUPT"/>
+					<RESOURCE NAME="SPI" VALUE="" TYPE="SPI_RESOURCE"/>
+					<RESOURCE NAME="SleepInterrupt" VALUE="" TYPE="SLEEP_INTERRUPT"/>
+					<RESOURCE NAME="TIMER0" VALUE="" TYPE="TIMER_RESOURCE"/>
+					<RESOURCE NAME="TIMER1" VALUE="" TYPE="TIMER_RESOURCE"/>
+					<RESOURCE NAME="TIMER2" VALUE="" TYPE="TIMER_RESOURCE"/>
+					<RESOURCE NAME="USBConfig" VALUE="" TYPE="USB_BUS_CONFIG"/>
+					<RESOURCE NAME="WakeUp" VALUE="" TYPE="USB_WAKEUP"/>
+				</RESERVED_RESOURCE_LIST>
+				<GLOBAL_REGISTER_LIST>
+					<REGISTER NAME="AnalogMuxConfig" VALUE="0" ADDR="61" DATASHEET_NAME="AMUX_CFG"/>
+					<REGISTER NAME="AnalogMuxDAC" VALUE="0" ADDR="fd" DATASHEET_NAME="IDAC_D"/>
+					<REGISTER NAME="CPUBasePointer" VALUE="0" ADDR="cd" DATASHEET_NAME="CPU_BP"/>
+					<REGISTER NAME="CUPCurrentPointer" VALUE="0" ADDR="ce" DATASHEET_NAME="CPU_CP"/>
+					<REGISTER NAME="CapSense_CountHigh" VALUE="0" ADDR="a5" DATASHEET_NAME="CS_CNTH"/>
+					<REGISTER NAME="CapSense_CountLow" VALUE="0" ADDR="a4" DATASHEET_NAME="CS_CNTL"/>
+					<REGISTER NAME="CapSense_Ctrl0" VALUE="20" ADDR="a0" DATASHEET_NAME="CS_CR0"/>
+					<REGISTER NAME="CapSense_Ctrl1" VALUE="80" ADDR="a1" DATASHEET_NAME="CS_CR1"/>
+					<REGISTER NAME="CapSense_Ctrl2" VALUE="80" ADDR="a2" DATASHEET_NAME="CS_CR2"/>
+					<REGISTER NAME="CapSense_Ctrl3" VALUE="c" ADDR="a3" DATASHEET_NAME="CS_CR3"/>
+					<REGISTER NAME="CapSense_Slew" VALUE="0" ADDR="a8" DATASHEET_NAME="CS_SLEW"/>
+					<REGISTER NAME="CapSense_Status" VALUE="0" ADDR="a6" DATASHEET_NAME="CS_STAT"/>
+					<REGISTER NAME="CapSense_Timer" VALUE="0" ADDR="a7" DATASHEET_NAME="CS_TIMER"/>
+					<REGISTER NAME="ComparatorLUT" VALUE="33" ADDR="7c" DATASHEET_NAME="CMP_LUT"/>
+					<REGISTER NAME="Comparator_Ctrl0" VALUE="0" ADDR="7a" DATASHEET_NAME="CMP_CR0"/>
+					<REGISTER NAME="Comparator_Ctrl1" VALUE="0" ADDR="7b" DATASHEET_NAME="CMP_CR1"/>
+					<REGISTER NAME="Comparator_MUX" VALUE="0" ADDR="79" DATASHEET_NAME="CMP_MUX"/>
+					<REGISTER NAME="Endpoint0Control" VALUE="0" ADDR="36" DATASHEET_NAME="EP0_CR"/>
+					<REGISTER NAME="Endpoint0Count" VALUE="0" ADDR="37" DATASHEET_NAME="EP0_CNT"/>
+					<REGISTER NAME="Endpoint0Data0" VALUE="0" ADDR="38" DATASHEET_NAME="EP0_DR0"/>
+					<REGISTER NAME="Endpoint0Data1" VALUE="0" ADDR="39" DATASHEET_NAME="EP0_DR1"/>
+					<REGISTER NAME="Endpoint0Data2" VALUE="0" ADDR="3a" DATASHEET_NAME="EP0_DR2"/>
+					<REGISTER NAME="Endpoint0Data3" VALUE="0" ADDR="3b" DATASHEET_NAME="EP0_DR3"/>
+					<REGISTER NAME="Endpoint0Data4" VALUE="0" ADDR="3c" DATASHEET_NAME="EP0_DR4"/>
+					<REGISTER NAME="Endpoint0Data5" VALUE="0" ADDR="3d" DATASHEET_NAME="EP0_DR5"/>
+					<REGISTER NAME="Endpoint0Data6" VALUE="0" ADDR="3e" DATASHEET_NAME="EP0_DR6"/>
+					<REGISTER NAME="Endpoint0Data7" VALUE="0" ADDR="3f" DATASHEET_NAME="EP0_DR7"/>
+					<REGISTER NAME="Endpoint1Control" VALUE="0" ADDR="154" DATASHEET_NAME="EP1_CR"/>
+					<REGISTER NAME="Endpoint1Count0" VALUE="0" ADDR="40" DATASHEET_NAME="EP1_CNT"/>
+					<REGISTER NAME="Endpoint1Count1" VALUE="0" ADDR="41" DATASHEET_NAME="EP1_CNT1"/>
+					<REGISTER NAME="Endpoint2Control" VALUE="0" ADDR="155" DATASHEET_NAME="EP2_CR"/>
+					<REGISTER NAME="Endpoint2Count0" VALUE="0" ADDR="42" DATASHEET_NAME="EP2_CNT"/>
+					<REGISTER NAME="Endpoint2Count1" VALUE="0" ADDR="43" DATASHEET_NAME="EP2_CNT1"/>
+					<REGISTER NAME="Endpoint3Control" VALUE="0" ADDR="156" DATASHEET_NAME="EP3_CR"/>
+					<REGISTER NAME="Endpoint3Count0" VALUE="0" ADDR="44" DATASHEET_NAME="EP3_CNT"/>
+					<REGISTER NAME="Endpoint3Count1" VALUE="0" ADDR="45" DATASHEET_NAME="EP3_CNT1"/>
+					<REGISTER NAME="Endpoint4Control" VALUE="0" ADDR="157" DATASHEET_NAME="EP4_CR"/>
+					<REGISTER NAME="Endpoint4Count0" VALUE="0" ADDR="46" DATASHEET_NAME="EP4_CNT"/>
+					<REGISTER NAME="Endpoint4Count1" VALUE="0" ADDR="47" DATASHEET_NAME="EP4_CNT1"/>
+					<REGISTER NAME="Endpoint5Control" VALUE="0" ADDR="158" DATASHEET_NAME="EP5_CR"/>
+					<REGISTER NAME="Endpoint5Count0" VALUE="0" ADDR="48" DATASHEET_NAME="EP5_CNT"/>
+					<REGISTER NAME="Endpoint5Count1" VALUE="0" ADDR="49" DATASHEET_NAME="EP5_CNT1"/>
+					<REGISTER NAME="Endpoint6Control" VALUE="0" ADDR="159" DATASHEET_NAME="EP6_CR"/>
+					<REGISTER NAME="Endpoint6Count0" VALUE="0" ADDR="4a" DATASHEET_NAME="EP6_CNT"/>
+					<REGISTER NAME="Endpoint6Count1" VALUE="0" ADDR="4b" DATASHEET_NAME="EP6_CNT1"/>
+					<REGISTER NAME="Endpoint7Control" VALUE="0" ADDR="15a" DATASHEET_NAME="EP7_CR"/>
+					<REGISTER NAME="Endpoint7Count0" VALUE="0" ADDR="4c" DATASHEET_NAME="EP7_CNT"/>
+					<REGISTER NAME="Endpoint7Count1" VALUE="0" ADDR="4d" DATASHEET_NAME="EP7_CNT1"/>
+					<REGISTER NAME="Endpoint8Control" VALUE="0" ADDR="15b" DATASHEET_NAME="EP8_CR"/>
+					<REGISTER NAME="Endpoint8Count0" VALUE="0" ADDR="4e" DATASHEET_NAME="EP8_CNT"/>
+					<REGISTER NAME="Endpoint8Count1" VALUE="0" ADDR="4f" DATASHEET_NAME="EP8_CNT1"/>
+					<REGISTER NAME="I2CAddress" VALUE="0" ADDR="ca" DATASHEET_NAME="I2C_ADDR"/>
+					<REGISTER NAME="I2CConfig" VALUE="44" ADDR="d6" DATASHEET_NAME="I2C_CFG"/>
+					<REGISTER NAME="I2CDataBuffer" VALUE="0" ADDR="cf" DATASHEET_NAME="I2C_BUF"/>
+					<REGISTER NAME="I2CExtendedBasePointer" VALUE="0" ADDR="cb" DATASHEET_NAME="I2C_BP"/>
+					<REGISTER NAME="I2CExtendedConfig" VALUE="0" ADDR="c8" DATASHEET_NAME="I2C_XCFG"/>
+					<REGISTER NAME="I2CExtendedCurrentPointer" VALUE="0" ADDR="cc" DATASHEET_NAME="I2C_CP"/>
+					<REGISTER NAME="I2CExtendedStatus" VALUE="0" ADDR="c9" DATASHEET_NAME="I2C_XSTAT"/>
+					<REGISTER NAME="I2CStatus_Ctrl" VALUE="0" ADDR="d7" DATASHEET_NAME="I2C_SCR"/>
+					<REGISTER NAME="IOConfig" VALUE="0" ADDR="1dc" DATASHEET_NAME="IO_CFG"/>
+					<REGISTER NAME="OscillatorControl_2" VALUE="0" ADDR="1e2" DATASHEET_NAME="OSC_CR2"/>
+					<REGISTER NAME="OutputOverridePort0" VALUE="0" ADDR="1d1" DATASHEET_NAME="OUT_P0"/>
+					<REGISTER NAME="OutputOverridePort1" VALUE="0" ADDR="1dd" DATASHEET_NAME="OUT_P1"/>
+					<REGISTER NAME="PRS_Control" VALUE="0" ADDR="a9" DATASHEET_NAME="PRS_CR"/>
+					<REGISTER NAME="Port_0_Data" VALUE="0" ADDR="0" DATASHEET_NAME="PRT0DR"/>
+					<REGISTER NAME="Port_0_DriveMode_0" VALUE="0" ADDR="100" DATASHEET_NAME="PRT0DM0"/>
+					<REGISTER NAME="Port_0_DriveMode_1" VALUE="ff" ADDR="101" DATASHEET_NAME="PRT0DM1"/>
+					<REGISTER NAME="Port_0_IntEn" VALUE="0" ADDR="1" DATASHEET_NAME="PRT0IE"/>
+					<REGISTER NAME="Port_0_MUXBusCtrl" VALUE="ff" ADDR="1d8" DATASHEET_NAME="MUX_CR0"/>
+					<REGISTER NAME="Port_1_Data" VALUE="17" ADDR="4" DATASHEET_NAME="PRT1DR"/>
+					<REGISTER NAME="Port_1_DriveMode_0" VALUE="3" ADDR="104" DATASHEET_NAME="PRT1DM0"/>
+					<REGISTER NAME="Port_1_DriveMode_1" VALUE="eb" ADDR="105" DATASHEET_NAME="PRT1DM1"/>
+					<REGISTER NAME="Port_1_IntEn" VALUE="0" ADDR="5" DATASHEET_NAME="PRT1IE"/>
+					<REGISTER NAME="Port_1_MUXBusCtrl" VALUE="a8" ADDR="1d9" DATASHEET_NAME="MUX_CR1"/>
+					<REGISTER NAME="Port_2_Data" VALUE="0" ADDR="8" DATASHEET_NAME="PRT2DR"/>
+					<REGISTER NAME="Port_2_DriveMode_0" VALUE="0" ADDR="108" DATASHEET_NAME="PRT2DM0"/>
+					<REGISTER NAME="Port_2_DriveMode_1" VALUE="ff" ADDR="109" DATASHEET_NAME="PRT2DM1"/>
+					<REGISTER NAME="Port_2_IntEn" VALUE="0" ADDR="9" DATASHEET_NAME="PRT2IE"/>
+					<REGISTER NAME="Port_2_MUXBusCtrl" VALUE="ff" ADDR="1da" DATASHEET_NAME="MUX_CR2"/>
+					<REGISTER NAME="Port_3_Data" VALUE="0" ADDR="c" DATASHEET_NAME="PRT3DR"/>
+					<REGISTER NAME="Port_3_DriveMode_0" VALUE="0" ADDR="10c" DATASHEET_NAME="PRT3DM0"/>
+					<REGISTER NAME="Port_3_DriveMode_1" VALUE="ff" ADDR="10d" DATASHEET_NAME="PRT3DM1"/>
+					<REGISTER NAME="Port_3_IntEn" VALUE="0" ADDR="d" DATASHEET_NAME="PRT3IE"/>
+					<REGISTER NAME="Port_3_MUXBusCtrl" VALUE="ff" ADDR="1db" DATASHEET_NAME="MUX_CR3"/>
+					<REGISTER NAME="Port_4_Data" VALUE="0" ADDR="10" DATASHEET_NAME="PRT4DR"/>
+					<REGISTER NAME="Port_4_DriveMode_0" VALUE="0" ADDR="110" DATASHEET_NAME="PRT4DM0"/>
+					<REGISTER NAME="Port_4_DriveMode_1" VALUE="f" ADDR="111" DATASHEET_NAME="PRT4DM1"/>
+					<REGISTER NAME="Port_4_IntEn" VALUE="0" ADDR="11" DATASHEET_NAME="PRT4IE"/>
+					<REGISTER NAME="Port_4_MUXBusCtrl" VALUE="f" ADDR="1df" DATASHEET_NAME="MUX_CR4"/>
+					<REGISTER NAME="SpiConfig" VALUE="0" ADDR="129" DATASHEET_NAME="SPI_CFG"/>
+					<REGISTER NAME="SpiControl" VALUE="0" ADDR="2b" DATASHEET_NAME="SPI_CR"/>
+					<REGISTER NAME="TimerConfig:0" VALUE="0" ADDR="b0" DATASHEET_NAME="PT0_CFG"/>
+					<REGISTER NAME="TimerConfig:1" VALUE="2" ADDR="b3" DATASHEET_NAME="PT1_CFG"/>
+					<REGISTER NAME="TimerConfig:2" VALUE="0" ADDR="b6" DATASHEET_NAME="PT2_CFG"/>
+					<REGISTER NAME="TimerData0:0" VALUE="1" ADDR="b2" DATASHEET_NAME="PT0_DATA0"/>
+					<REGISTER NAME="TimerData0:1" VALUE="0" ADDR="b5" DATASHEET_NAME="PT1_DATA0"/>
+					<REGISTER NAME="TimerData0:2" VALUE="0" ADDR="b8" DATASHEET_NAME="PT2_DATA0"/>
+					<REGISTER NAME="TimerData1:0" VALUE="0" ADDR="b1" DATASHEET_NAME="PT0_DATA1"/>
+					<REGISTER NAME="TimerData1:1" VALUE="0" ADDR="b4" DATASHEET_NAME="PT1_DATA1"/>
+					<REGISTER NAME="TimerData1:2" VALUE="0" ADDR="b7" DATASHEET_NAME="PT2_DATA1"/>
+					<REGISTER NAME="USBControl_0" VALUE="0" ADDR="33" DATASHEET_NAME="USB_CR0"/>
+					<REGISTER NAME="USBControl_1" VALUE="0" ADDR="130" DATASHEET_NAME="USB_CR1"/>
+					<REGISTER NAME="USBIOControl_0" VALUE="0" ADDR="34" DATASHEET_NAME="USBIO_CR0"/>
+					<REGISTER NAME="USBIOControl_1" VALUE="0" ADDR="35" DATASHEET_NAME="USBIO_CR1"/>
+					<REGISTER NAME="USB_MISC_CR" VALUE="0" ADDR="1bd" DATASHEET_NAME="USB_MISC_CR"/>
+				</GLOBAL_REGISTER_LIST>
+				<PIN_DESC_LIST>
+					<PIN_DESC PIN_NUMBER="1" PIN_LABEL="NC" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="Timer16_1" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="2" PIN_LABEL="P2[7]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW20" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="3" PIN_LABEL="P2[5]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW21" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="4" PIN_LABEL="P2[3]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW22" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="5" PIN_LABEL="P2[1]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW23" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="6" PIN_LABEL="P4[3]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW24" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="7" PIN_LABEL="P4[1]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW25" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="8" PIN_LABEL="P3[7]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW26" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="9" PIN_LABEL="P3[5]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW27" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="10" PIN_LABEL="P3[3]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW0" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="11" PIN_LABEL="P3[1]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW1" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="12" PIN_LABEL="P1[7]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW2" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="13" PIN_LABEL="P1[5]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW29" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="14" PIN_LABEL="NC" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="15" PIN_LABEL="NC" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="16" PIN_LABEL="P1[3]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW28" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="17" PIN_LABEL="P1[1]" PIN_SELECT="I2C SCL" PIN_DRIVE="Open Drain Low" PIN_DATA="" PIN_CUSTOM_NAME="EzI2CsSCL" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="18" PIN_LABEL="VSS" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="19" PIN_LABEL="NC" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="20" PIN_LABEL="NC" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="21" PIN_LABEL="VDD" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="22" PIN_LABEL="P1[0]" PIN_SELECT="I2C SDA" PIN_DRIVE="Open Drain Low" PIN_DATA="" PIN_CUSTOM_NAME="EzI2CsSDA" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="23" PIN_LABEL="P1[2]" PIN_SELECT="StdCPUInput" PIN_DRIVE="Pull Up" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_2" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="24" PIN_LABEL="P1[4]" PIN_SELECT="StdCPUInput" PIN_DRIVE="Pull Up" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_4" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="25" PIN_LABEL="P1[6]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_6" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="26" PIN_LABEL="XRES" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="27" PIN_LABEL="P3[0]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW3" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="28" PIN_LABEL="P3[2]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW4" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="29" PIN_LABEL="P3[4]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW5" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="30" PIN_LABEL="P3[6]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW6" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="31" PIN_LABEL="P4[0]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW7" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="32" PIN_LABEL="P4[2]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW8" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="33" PIN_LABEL="P2[0]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW9" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="34" PIN_LABEL="P2[2]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW10" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="35" PIN_LABEL="P2[4]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW11" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="36" PIN_LABEL="P2[6]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW12" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="37" PIN_LABEL="P0[0]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW13" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="38" PIN_LABEL="P0[2]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW14" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="39" PIN_LABEL="P0[4]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW15" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="40" PIN_LABEL="P0[6]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW16" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="41" PIN_LABEL="VDD" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="42" PIN_LABEL="NC" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="43" PIN_LABEL="NC" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="44" PIN_LABEL="P0[7]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW17" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="45" PIN_LABEL="P0[5]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW18" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="46" PIN_LABEL="P0[3]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDSW19" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="47" PIN_LABEL="VSS" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
+					<PIN_DESC PIN_NUMBER="48" PIN_LABEL="P0[1]" PIN_SELECT="AnalogMUXInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="CSDCapacitor" PIN_INTERRUPT="DisableInt"/>
+				</PIN_DESC_LIST>
+			</DEVICE_DATA>
+			<CONFIG_PREFERENCES>
+				<SELECTED_USER_MODULE_LIST/>
+			</CONFIG_PREFERENCES>
+		</PSOC_CONFIG>
+	</PSOC_CONFIG_LIST>
+</PSOC_DEVICE_DB>

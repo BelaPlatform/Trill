@@ -1,0 +1,10 @@
+**/.DS_Store
+**/._*
+.*.sw?
+*/*/output
+*/*/obj
+*/*/lib/obj
+**/backup
+**/*.bak
+**/BuildMsg.txt
+**/*.a

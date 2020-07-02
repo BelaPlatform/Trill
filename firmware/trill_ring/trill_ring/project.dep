@@ -1,0 +1,40 @@
+# DO NOT DELETE
+./obj/boot.o : \
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8ssc.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\lib\GlobalParams.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./obj/main.o :  ./lib/CSD.h ./lib/EzI2Cs.h ./lib/PSoCAPI.h\
+   ./lib/PSoCGPIOINT.h ./lib/PSoCGPIOInt.h ./lib/Timer16_1.h\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.h\
+   Z:\shared_folder_adan\trill_firmware_git\common\trill-main.h\
+   Z:\shared_folder_adan\trill_firmware_git\common\trill.h
+./lib/obj/csd.o :  ./lib/CSD.inc ./lib/GlobalParams.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/csdhl.o :  ./lib/CSD.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/csdint.o : \
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/csdtable.o :  ./lib/CSD.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/ezi2cs.o :  ./lib/EzI2Cs.inc ./lib/PSoCGPIOINT.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/ezi2csint.o :  ./lib/EzI2Cs.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/psocconfig.o :  ./lib/GlobalParams.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/psocconfigtbl.o : \
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc
+./lib/obj/timer16_1.o :  ./lib/Timer16_1.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc
+./lib/obj/timer16_1int.o :  ./lib/Timer16_1.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/include/CY9C7D~1/m8c.inc\
+   Z:\shared_folder_adan\trill_firmware_git\trill_ring\trill_ring\memory.inc

@@ -1,0 +1,7 @@
+-F0x30 -g -blit:0x200.0x1fff 
+ -bdata:0.0x2ff -rwh:SSCParmBlk:0x00F7.0x00FF -BInterruptRAM:0 -Bvirtual_registers  
+ -Btrill_craft_RAM 
+ -bSSCParmBlk:0xF6.0xFF 	
+ -o"output/trill_craft" 
+obj/main.o 	
+ ./lib/libPSoc.a -LC:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/lib/LMM/eightpages C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/lib/CY8C20066/cms.a C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CYPRES~1/tools/lib/LMM/UASW/NoMAC/arith.a  
