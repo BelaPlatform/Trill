@@ -1,0 +1,586 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 6000 3600 0    70   ~ 0
+I2C_SCL
+Text Label 6000 3700 0    70   ~ 0
+I2C_SDA
+Wire Wire Line
+	4900 5800 5000 5800
+Wire Wire Line
+	3500 2600 3125 2600
+Text Label 3500 2500 0    10   ~ 0
+GND
+Wire Wire Line
+	2800 2700 2800 2800
+Text Label 2800 2700 0    10   ~ 0
+GND
+Wire Wire Line
+	3300 2300 3500 2300
+Text Label 3500 2300 0    10   ~ 0
+VCC
+Wire Wire Line
+	2800 2300 2800 2400
+Text Label 2800 2300 0    10   ~ 0
+VCC
+Text Label 3500 2900 2    70   ~ 0
+XRES
+$Comp
+L Device:C C1
+U 1 1 3A37D600
+P 2800 2550
+F 0 "C1" H 2950 2525 59  0000 L BNN
+F 1 "C-USC0603" H 2840 2385 59  0001 L BNN
+F 2 "trill-flex-base:C0603" H 2800 2550 50  0001 C CNN
+F 3 "" H 2800 2550 50  0001 C CNN
+	1    2800 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 EC893FD4
+P 5200 3600
+F 0 "R1" V 5200 3725 59  0000 L BNN
+F 1 "R-EU_R0603" H 5300 3600 59  0001 L BNN
+F 2 "trill-flex-base:R0603" H 5200 3600 50  0001 C CNN
+F 3 "" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 711A3F32
+P 5200 3700
+F 0 "R2" V 5200 3825 59  0000 L BNN
+F 1 "R-EU_R0603" H 5300 3700 59  0001 L BNN
+F 2 "trill-flex-base:R0603" H 5200 3700 50  0001 C CNN
+F 3 "" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 7B1234C5
+P 5000 5950
+F 0 "C2" H 5040 5975 59  0000 L BNN
+F 1 "C-USC0603" H 5040 5785 59  0001 L BNN
+F 2 "trill-flex-base:C0603" H 5000 5950 50  0001 C CNN
+F 3 "" H 5000 5950 50  0001 C CNN
+	1    5000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L trill-flex-base:CY8C206X6A IC1
+U 1 1 70C115B1
+P 4200 4000
+F 0 "IC1" H 4200 4000 50  0001 C CNN
+F 1 "CY8C206X6A" H 4200 4000 50  0001 C CNN
+F 2 "trill-flex-base:QFN48-LEADS" H 4200 4000 50  0001 C CNN
+F 3 "" H 4200 4000 50  0001 C CNN
+	1    4200 4000
+	1    0    0    -1  
+$EndComp
+Text Label 4900 4000 0    50   ~ 0
+EVENT
+Connection ~ 3500 2600
+Wire Wire Line
+	3500 2600 3500 2700
+Wire Wire Line
+	3500 2500 3500 2600
+Wire Wire Line
+	3500 2300 3500 2400
+$Comp
+L Connector_Generic:Conn_01x32 J2
+U 1 1 5D83A471
+P 9200 4000
+F 0 "J2" H 9280 3992 50  0000 L CNN
+F 1 "Conn_01x32" H 9280 3901 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-32S-0.5SH_1x32-1MP_P0.50mm_Horizontal" H 9200 4000 50  0001 C CNN
+F 3 "~" H 9200 4000 50  0001 C CNN
+	1    9200 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4200 6850 4350
+Connection ~ 6850 4200
+Wire Wire Line
+	6900 4200 6850 4200
+Wire Wire Line
+	6850 3700 6850 4200
+Wire Wire Line
+	6900 3700 6850 3700
+Connection ~ 6750 3500
+Wire Wire Line
+	6750 4000 6900 4000
+Wire Wire Line
+	6750 3500 6750 4000
+Wire Wire Line
+	6750 3500 6900 3500
+Wire Wire Line
+	6750 3350 6750 3500
+Wire Wire Line
+	4900 3900 6250 3900
+Wire Wire Line
+	6500 4100 6900 4100
+Wire Wire Line
+	6500 3900 6500 4100
+Wire Wire Line
+	4900 3800 6100 3800
+Wire Wire Line
+	6500 3600 6900 3600
+Wire Wire Line
+	6500 3800 6500 3600
+$Comp
+L Connector:Conn_01x03_Female Jumper1
+U 1 1 5D658A65
+P 7100 4100
+F 0 "Jumper1" H 7127 4126 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7127 4035 50  0000 L CNN
+F 2 "trill-flex-base:DOUBLE_SOLDER_JUMPER" H 7100 4100 50  0001 C CNN
+F 3 "~" H 7100 4100 50  0001 C CNN
+	1    7100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female Jumper0
+U 1 1 5D6589B9
+P 7100 3600
+F 0 "Jumper0" H 7127 3626 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7127 3535 50  0000 L CNN
+F 2 "trill-flex-base:DOUBLE_SOLDER_JUMPER" H 7100 3600 50  0001 C CNN
+F 3 "~" H 7100 3600 50  0001 C CNN
+	1    7100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D8648F1
+P 6250 4150
+F 0 "R4" H 6325 4125 59  0000 L BNN
+F 1 "R-EU_R0603" H 6350 4150 59  0001 L BNN
+F 2 "trill-flex-base:R0603" H 6250 4150 50  0001 C CNN
+F 3 "" H 6250 4150 50  0001 C CNN
+	1    6250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D86602C
+P 6100 4150
+F 0 "R3" H 5900 4125 59  0000 L BNN
+F 1 "R-EU_R0603" H 6200 4150 59  0001 L BNN
+F 2 "trill-flex-base:R0603" H 6100 4150 50  0001 C CNN
+F 3 "" H 6100 4150 50  0001 C CNN
+	1    6100 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 3900
+Wire Wire Line
+	6250 3900 6500 3900
+Connection ~ 6100 3800
+Wire Wire Line
+	6100 3800 6500 3800
+Text Label 4900 4100 0    50   ~ 0
+SENSE1
+Text Label 4900 4200 0    50   ~ 0
+SENSE2
+Text Label 4900 4300 0    50   ~ 0
+SENSE3
+Text Label 4900 4400 0    50   ~ 0
+SENSE4
+Text Label 4900 4500 0    50   ~ 0
+SENSE5
+Text Label 4900 4600 0    50   ~ 0
+SENSE6
+Text Label 4900 4700 0    50   ~ 0
+SENSE7
+Text Label 4900 4800 0    50   ~ 0
+SENSE8
+Text Label 4900 4900 0    50   ~ 0
+SENSE9
+Text Label 4900 5000 0    50   ~ 0
+SENSE10
+Text Label 4900 5100 0    50   ~ 0
+SENSE11
+Text Label 4900 5200 0    50   ~ 0
+SENSE12
+Text Label 4900 5300 0    50   ~ 0
+SENSE13
+Text Label 4900 5400 0    50   ~ 0
+SENSE14
+Text Label 4900 5500 0    50   ~ 0
+SENSE15
+Text Label 4900 5600 0    50   ~ 0
+SENSE16
+Text Label 4900 5700 0    50   ~ 0
+SENSE17
+Text Label 4900 2300 0    50   ~ 0
+SENSE18
+Text Label 4900 2400 0    50   ~ 0
+SENSE19
+Text Label 4900 2500 0    50   ~ 0
+SENSE20
+Text Label 4900 2600 0    50   ~ 0
+SENSE21
+Text Label 4900 2700 0    50   ~ 0
+SENSE22
+Text Label 4900 2800 0    50   ~ 0
+SENSE23
+Text Label 4900 2900 0    50   ~ 0
+SENSE24
+Text Label 4900 3000 0    50   ~ 0
+SENSE25
+Text Label 4900 3100 0    50   ~ 0
+SENSE26
+Text Label 4900 3200 0    50   ~ 0
+SENSE27
+Text Label 4900 3300 0    50   ~ 0
+SENSE28
+Text Label 4900 3400 0    50   ~ 0
+SENSE29
+Text Label 4900 3500 0    50   ~ 0
+SENSE30
+Wire Wire Line
+	8700 2600 9000 2600
+Wire Wire Line
+	8700 2700 9000 2700
+Wire Wire Line
+	8700 2800 9000 2800
+Wire Wire Line
+	8700 2900 9000 2900
+Wire Wire Line
+	8700 3000 9000 3000
+Wire Wire Line
+	8700 3100 9000 3100
+Wire Wire Line
+	8700 3200 9000 3200
+Wire Wire Line
+	8700 3300 9000 3300
+Wire Wire Line
+	8700 3400 9000 3400
+Wire Wire Line
+	8700 3500 9000 3500
+Wire Wire Line
+	8700 3600 9000 3600
+Wire Wire Line
+	8700 3700 9000 3700
+Wire Wire Line
+	8700 3800 9000 3800
+Wire Wire Line
+	8700 3900 9000 3900
+Wire Wire Line
+	8700 4000 9000 4000
+Wire Wire Line
+	8700 4100 9000 4100
+Wire Wire Line
+	8700 4200 9000 4200
+Wire Wire Line
+	8700 4300 9000 4300
+Wire Wire Line
+	8700 4400 9000 4400
+Wire Wire Line
+	8700 4500 9000 4500
+Wire Wire Line
+	8700 4600 9000 4600
+Wire Wire Line
+	8700 4700 9000 4700
+Wire Wire Line
+	8700 4800 9000 4800
+Wire Wire Line
+	8700 4900 9000 4900
+Wire Wire Line
+	8700 5000 9000 5000
+Wire Wire Line
+	8700 5100 9000 5100
+Wire Wire Line
+	8700 5200 9000 5200
+Wire Wire Line
+	8700 5300 9000 5300
+Wire Wire Line
+	8700 5400 9000 5400
+Wire Wire Line
+	8700 5500 9000 5500
+Wire Wire Line
+	9000 2500 8450 2500
+Text Label 8700 2600 0    50   ~ 0
+SENSE1
+Text Label 8700 2700 0    50   ~ 0
+SENSE2
+Text Label 8700 2800 0    50   ~ 0
+SENSE3
+Text Label 8700 2900 0    50   ~ 0
+SENSE4
+Text Label 8700 3000 0    50   ~ 0
+SENSE5
+Text Label 8700 3100 0    50   ~ 0
+SENSE6
+Text Label 8700 3200 0    50   ~ 0
+SENSE7
+Text Label 8700 3300 0    50   ~ 0
+SENSE8
+Text Label 8700 3400 0    50   ~ 0
+SENSE9
+Text Label 8700 3500 0    50   ~ 0
+SENSE10
+Text Label 8700 3600 0    50   ~ 0
+SENSE11
+Text Label 8700 3700 0    50   ~ 0
+SENSE12
+Text Label 8700 3800 0    50   ~ 0
+SENSE13
+Text Label 8700 3900 0    50   ~ 0
+SENSE14
+Text Label 8700 4000 0    50   ~ 0
+SENSE15
+Text Label 8700 4100 0    50   ~ 0
+SENSE16
+Text Label 8700 4200 0    50   ~ 0
+SENSE17
+Text Label 8700 4300 0    50   ~ 0
+SENSE18
+Text Label 8700 4400 0    50   ~ 0
+SENSE19
+Text Label 8700 4500 0    50   ~ 0
+SENSE20
+Text Label 8700 4600 0    50   ~ 0
+SENSE21
+Text Label 8700 4700 0    50   ~ 0
+SENSE22
+Text Label 8700 4800 0    50   ~ 0
+SENSE23
+Text Label 8700 4900 0    50   ~ 0
+SENSE24
+Text Label 8700 5000 0    50   ~ 0
+SENSE25
+Text Label 8700 5100 0    50   ~ 0
+SENSE26
+Text Label 8700 5200 0    50   ~ 0
+SENSE27
+Text Label 8700 5300 0    50   ~ 0
+SENSE28
+Text Label 8700 5400 0    50   ~ 0
+SENSE29
+Text Label 8700 5500 0    50   ~ 0
+SENSE30
+Text Label 1650 5000 0    50   ~ 0
+I2C_SCL
+Text Label 1650 5100 0    50   ~ 0
+I2C_SDA
+Text Label 1650 5700 0    50   ~ 0
+EVENT
+Text Label 1650 5600 0    50   ~ 0
+XRES
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5DD163C3
+P 2200 5100
+F 0 "J1" H 2227 5076 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 2227 4985 50  0000 L CNN
+F 2 "Connectors_JST:JST_PH_B4B-PH-SM4-TB_04x2.00mm_Straight" H 2200 5100 50  0001 C CNN
+F 3 "~" H 2200 5100 50  0001 C CNN
+	1    2200 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5000 2000 5000
+Wire Wire Line
+	1650 5100 2000 5100
+Wire Wire Line
+	1500 5400 1500 5300
+Wire Wire Line
+	1500 5300 2000 5300
+Wire Wire Line
+	1500 4800 1500 5200
+Wire Wire Line
+	1500 5200 2000 5200
+Wire Wire Line
+	1650 5600 2000 5600
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5DD16465
+P 2200 5600
+F 0 "J3" H 2227 5576 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 2227 5485 50  0000 L CNN
+F 2 "trill-flex-base:JST_PH02x2.00mm_only_pins" H 2200 5600 50  0001 C CNN
+F 3 "~" H 2200 5600 50  0001 C CNN
+	1    2200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5700 2000 5700
+$Comp
+L madbean_supply_pins:GND #GND0101
+U 1 1 603EEACD
+P 1500 5500
+F 0 "#GND0101" H 1500 5500 45  0001 L BNN
+F 1 "GND" H 1500 5380 45  0000 C CNN
+F 2 "" H 1500 5500 50  0001 C CNN
+F 3 "" H 1500 5500 50  0001 C CNN
+	1    1500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 603F188D
+P 1500 4800
+F 0 "#PWR0101" H 1500 4650 50  0001 C CNN
+F 1 "VCC" H 1515 4973 50  0000 C CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L madbean_supply_pins:GND #GND0102
+U 1 1 603F21DD
+P 6850 4450
+F 0 "#GND0102" H 6850 4450 45  0001 L BNN
+F 1 "GND" H 6850 4330 45  0000 C CNN
+F 2 "" H 6850 4450 50  0001 C CNN
+F 3 "" H 6850 4450 50  0001 C CNN
+	1    6850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L madbean_supply_pins:GND #GND0103
+U 1 1 603F2F21
+P 9000 5850
+F 0 "#GND0103" H 9000 5850 45  0001 L BNN
+F 1 "GND" H 9000 5730 45  0000 C CNN
+F 2 "" H 9000 5850 50  0001 C CNN
+F 3 "" H 9000 5850 50  0001 C CNN
+	1    9000 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 5600 9000 5750
+$Comp
+L madbean_supply_pins:GND #GND0104
+U 1 1 603F6379
+P 8450 2600
+F 0 "#GND0104" H 8450 2600 45  0001 L BNN
+F 1 "GND" H 8450 2480 45  0000 C CNN
+F 2 "" H 8450 2600 50  0001 C CNN
+F 3 "" H 8450 2600 50  0001 C CNN
+	1    8450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L madbean_supply_pins:GND #GND0105
+U 1 1 603F712C
+P 2800 2900
+F 0 "#GND0105" H 2800 2900 45  0001 L BNN
+F 1 "GND" H 2800 2780 45  0000 C CNN
+F 2 "" H 2800 2900 50  0001 C CNN
+F 3 "" H 2800 2900 50  0001 C CNN
+	1    2800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L madbean_supply_pins:GND #GND0106
+U 1 1 603F9CCE
+P 3125 2700
+F 0 "#GND0106" H 3125 2700 45  0001 L BNN
+F 1 "GND" H 3125 2580 45  0000 C CNN
+F 2 "" H 3125 2700 50  0001 C CNN
+F 3 "" H 3125 2700 50  0001 C CNN
+	1    3125 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 603FCAF5
+P 2800 2300
+F 0 "#PWR0102" H 2800 2150 50  0001 C CNN
+F 1 "VCC" H 2815 2473 50  0000 C CNN
+F 2 "" H 2800 2300 50  0001 C CNN
+F 3 "" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 603FD9E6
+P 3300 2300
+F 0 "#PWR0103" H 3300 2150 50  0001 C CNN
+F 1 "VCC" H 3315 2473 50  0000 C CNN
+F 2 "" H 3300 2300 50  0001 C CNN
+F 3 "" H 3300 2300 50  0001 C CNN
+	1    3300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 603FEAD5
+P 6750 3350
+F 0 "#PWR0104" H 6750 3200 50  0001 C CNN
+F 1 "VCC" H 6765 3523 50  0000 C CNN
+F 2 "" H 6750 3350 50  0001 C CNN
+F 3 "" H 6750 3350 50  0001 C CNN
+	1    6750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3900 6250 4000
+Wire Wire Line
+	6250 4300 6250 4350
+Wire Wire Line
+	6100 3800 6100 4000
+Wire Wire Line
+	6100 4300 6100 4350
+Wire Wire Line
+	5350 3600 6000 3600
+Wire Wire Line
+	5350 3700 6000 3700
+Wire Wire Line
+	4900 3700 5050 3700
+Wire Wire Line
+	4900 3600 5050 3600
+$Comp
+L madbean_supply_pins:GND #GND0107
+U 1 1 6041927E
+P 5000 6300
+F 0 "#GND0107" H 5000 6300 45  0001 L BNN
+F 1 "GND" H 5000 6180 45  0000 C CNN
+F 2 "" H 5000 6300 50  0001 C CNN
+F 3 "" H 5000 6300 50  0001 C CNN
+	1    5000 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6100 5000 6200
+$Comp
+L madbean_supply_pins:GND #GND0108
+U 1 1 603F6FA3
+P 6250 4450
+F 0 "#GND0108" H 6250 4450 45  0001 L BNN
+F 1 "GND" H 6250 4330 45  0000 C CNN
+F 2 "" H 6250 4450 50  0001 C CNN
+F 3 "" H 6250 4450 50  0001 C CNN
+	1    6250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L madbean_supply_pins:GND #GND0109
+U 1 1 603F73B9
+P 6100 4450
+F 0 "#GND0109" H 6100 4450 45  0001 L BNN
+F 1 "GND" H 6100 4330 45  0000 C CNN
+F 2 "" H 6100 4450 50  0001 C CNN
+F 3 "" H 6100 4450 50  0001 C CNN
+	1    6100 4450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name trill-flex-base)(type KiCad)(uri ${KIPRJMOD}/trill-flex-base.pretty)(options "")(descr ""))
+)
