@@ -2,3 +2,7 @@
 .*.sw?
 *.b#?
 *.s#?
+*-backups
+*.bak
+fp-info-cache
+*.kicad_prl
