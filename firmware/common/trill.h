@@ -14,5 +14,6 @@
 #define ID_DEVICE_CRAFT 0x03
 #define ID_DEVICE_RING 0x04
 #define ID_DEVICE_HEX 0x05
+#define ID_DEVICE_FLEX 0x06
 
 #endif // TRILL_H_INCLUDED
