@@ -1,0 +1,29 @@
+"Source:","/home/mxa/Code/Bela/trill-private/hardware/craft/REV_C2_KiCad/trill-craft-castellated.kicad_sch"
+"Date:","So 26 Feb 2023 22:26:50 CET"
+"Tool:","Eeschema 6.0.10-86aedd382b~118~ubuntu22.10.1"
+"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","8"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"","","C1","100nF","Device:C","Capacitor_SMD:C_0402_1005Metric","~"
+"","","C2","2n2","Device:C","Capacitor_SMD:C_0402_1005Metric","~"
+"","","JP1","Jumper_2x3_Open","TRILL:Jumper_2x3_Open","TRILL:SolderJumper-2x3_P1.3mm_Open_Pad1.0x1.5mm","~"
+"","","R1","100","Device:R","Resistor_SMD:R_0402_1005Metric","~"
+"","","R2","100","Device:R","Resistor_SMD:R_0402_1005Metric","~"
+"","","R3","47k","Device:R","Resistor_SMD:R_0402_1005Metric","~"
+"","","R4","47k","Device:R","Resistor_SMD:R_0402_1005Metric","~"
+"","","U1","CY8C206X6A","TRILL:CY8C206X6A","Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm","https://www.infineon.com/dgdl/Infineon-CY8C20XX6A_S_1.8_V_Programmable_CapSense_Controller_with_SmartSense_Auto-tuning_1-33_Buttons_0-6_Sliders-DataSheet-v26_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ecc6dc04671"
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"1","1","C1","100nF","Device:C","Capacitor_SMD:C_0402_1005Metric","~"
+"2","1","C2","2n2","Device:C","Capacitor_SMD:C_0402_1005Metric","~"
+"3","1","JP1","Jumper_2x3_Open","TRILL:Jumper_2x3_Open","TRILL:SolderJumper-2x3_P1.3mm_Open_Pad1.0x1.5mm","~"
+"4","2","R1, R2","100","Device:R","Resistor_SMD:R_0402_1005Metric","~"
+"5","2","R3, R4","47k","Device:R","Resistor_SMD:R_0402_1005Metric","~"
+"6","1","U1","CY8C206X6A","TRILL:CY8C206X6A","Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm","https://www.infineon.com/dgdl/Infineon-CY8C20XX6A_S_1.8_V_Programmable_CapSense_Controller_with_SmartSense_Auto-tuning_1-33_Buttons_0-6_Sliders-DataSheet-v26_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ecc6dc04671"

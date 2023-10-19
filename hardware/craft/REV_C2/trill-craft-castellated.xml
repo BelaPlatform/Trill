@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/mxa/Code/Bela/trill-private/hardware/craft/REV_C2_KiCad/trill-craft-castellated.kicad_sch</source>
+    <date>So 26 Feb 2023 22:26:50 CET</date>
+    <tool>Eeschema 6.0.10-86aedd382b~118~ubuntu22.10.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Trill Craft</title>
+        <company>Augmented Instruments Ltd.</company>
+        <rev>C1</rev>
+        <date>2019</date>
+        <source>trill-craft-castellated.kicad_sch</source>
+        <comment number="1" value="https://bela.io/products/trill/"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cfce2ee3-93a5-4c89-906d-de5aa286ec88</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>2n2</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7550d58-00d5-4cc1-abde-db16fcc66c70</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper_2x3_Open</value>
+      <footprint>TRILL:SolderJumper-2x3_P1.3mm_Open_Pad1.0x1.5mm</footprint>
+      <libsource lib="TRILL" part="Jumper_2x3_Open" description="Jumper, 2x3-pole, both open"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b138ccf7-9232-440d-aab9-68d331214e37 18d87e76-c496-4c2f-b4a0-36451b4286ef</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7567f2f2-1791-4c0f-bc17-9bd02a79e9d1</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7bc8477-9f60-421a-b598-8dec051025c9</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005dd33747</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b59854a2-ae78-41a1-bc35-fa2db6701ac0</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>CY8C206X6A</value>
+      <footprint>Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm</footprint>
+      <datasheet>https://www.infineon.com/dgdl/Infineon-CY8C20XX6A_S_1.8_V_Programmable_CapSense_Controller_with_SmartSense_Auto-tuning_1-33_Buttons_0-6_Sliders-DataSheet-v26_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ecc6dc04671</datasheet>
+      <libsource lib="TRILL" part="CY8C206X6A" description="cypress capacitive touch"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="trill-craft-castellated.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1aeb5968-1390-458e-88ac-95e98efb93a4</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x06_Female">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Female</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x15_Female">
+      <description>Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x15_Female</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="TRILL" part="CE_Mark">
+      <description>CE Mark</description>
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">CE_Mark</field>
+        <field name="Footprint">TRILL:CE-Mark</field>
+      </fields>
+    </libpart>
+    <libpart lib="TRILL" part="CY8C206X6A">
+      <description>cypress capacitive touch</description>
+      <docs>https://www.infineon.com/dgdl/Infineon-CY8C20XX6A_S_1.8_V_Programmable_CapSense_Controller_with_SmartSense_Auto-tuning_1-33_Buttons_0-6_Sliders-DataSheet-v26_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ecc6dc04671</docs>
+      <footprints>
+        <fp>QFN</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CY8C206X6A</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-CY8C20XX6A_S_1.8_V_Programmable_CapSense_Controller_with_SmartSense_Auto-tuning_1-33_Buttons_0-6_Sliders-DataSheet-v26_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ecc6dc04671</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="P2[7]" type="bidirectional"/>
+        <pin num="3" name="P2[5]" type="bidirectional"/>
+        <pin num="4" name="P2[3]" type="bidirectional"/>
+        <pin num="5" name="P2[1]" type="bidirectional"/>
+        <pin num="6" name="P4[3]" type="bidirectional"/>
+        <pin num="7" name="P4[1]" type="bidirectional"/>
+        <pin num="8" name="P3[7]" type="bidirectional"/>
+        <pin num="9" name="P3[5]" type="bidirectional"/>
+        <pin num="10" name="P3[3]" type="bidirectional"/>
+        <pin num="11" name="P3[1]" type="bidirectional"/>
+        <pin num="12" name="(SCL)P1[7]" type="bidirectional"/>
+        <pin num="13" name="(SDA)P1[5]" type="bidirectional"/>
+        <pin num="14" name="NC" type="no_connect"/>
+        <pin num="15" name="NC" type="no_connect"/>
+        <pin num="16" name="P1[3]" type="bidirectional"/>
+        <pin num="17" name="(PR/SCL)P1[1]" type="bidirectional"/>
+        <pin num="18" name="VSS" type="power_in"/>
+        <pin num="19" name="NC" type="no_connect"/>
+        <pin num="20" name="NC" type="no_connect"/>
+        <pin num="21" name="VDD" type="power_in"/>
+        <pin num="22" name="(PR/SDA)P1[0]" type="bidirectional"/>
+        <pin num="23" name="P1[2]" type="bidirectional"/>
+        <pin num="24" name="P1[4]" type="bidirectional"/>
+        <pin num="25" name="P1[6]" type="bidirectional"/>
+        <pin num="26" name="XRES" type="input"/>
+        <pin num="27" name="P3[0]" type="bidirectional"/>
+        <pin num="28" name="P3[2]" type="bidirectional"/>
+        <pin num="29" name="P3[4]" type="bidirectional"/>
+        <pin num="30" name="P3[6]" type="bidirectional"/>
+        <pin num="31" name="P4[0]" type="bidirectional"/>
+        <pin num="32" name="P4[2]" type="bidirectional"/>
+        <pin num="33" name="P2[0]" type="bidirectional"/>
+        <pin num="34" name="P2[2]" type="bidirectional"/>
+        <pin num="35" name="P2[4]" type="bidirectional"/>
+        <pin num="36" name="P2[6]" type="bidirectional"/>
+        <pin num="37" name="P0[0]" type="bidirectional"/>
+        <pin num="38" name="P0[2]" type="bidirectional"/>
+        <pin num="39" name="P0[4]" type="bidirectional"/>
+        <pin num="40" name="P0[6]" type="bidirectional"/>
+        <pin num="41" name="VDD2" type="power_in"/>
+        <pin num="42" name="NC" type="no_connect"/>
+        <pin num="43" name="NC" type="no_connect"/>
+        <pin num="44" name="P0[7]" type="bidirectional"/>
+        <pin num="45" name="P0[5]" type="bidirectional"/>
+        <pin num="46" name="(INT)P0[3]" type="bidirectional"/>
+        <pin num="47" name="VSS2" type="power_in"/>
+        <pin num="48" name="(INT)P0[1]" type="bidirectional"/>
+        <pin num="49" name="Center_Pad" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="TRILL" part="Jumper_2x3_Open">
+      <description>Jumper, 2x3-pole, both open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*3Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2x3_Open</field>
+        <field name="Footprint">TRILL:SolderJumper-2x3_P1.3mm_Open_Pad1.0x1.5mm_with_paste</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="B" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="A" type="passive"/>
+        <pin num="6" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TRILL" part="Made_by_Bela-Logo">
+      <description>TRILL Logo on PCB (Pick desired style and size in footprints)</description>
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">Made_by_Bela-Logo</field>
+      </fields>
+    </libpart>
+    <libpart lib="TRILL" part="OpenSourceHardware_Logo">
+      <description>Open Source Hardware Logo OSHW</description>
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">OpenSourceHardware_Logo</field>
+        <field name="Footprint">TRILL:OpenSourceHardware_Logo</field>
+      </fields>
+    </libpart>
+    <libpart lib="TRILL" part="TRILL-Logo">
+      <description>TRILL Logo on PCB (Pick desired style and size in footprints)</description>
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">TRILL-Logo</field>
+      </fields>
+    </libpart>
+    <libpart lib="TRILL" part="WEEE_Label">
+      <description>WEEE Label</description>
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">WEEE_Label</field>
+        <field name="Footprint">TRILL:WEEE-Label</field>
+      </fields>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="TRILL">
+      <uri>/home/mxa/Code/Bela/trill-private/hardware/craft/REV_C2_KiCad/../../trill-KiCad-libs/symbols/TRILL.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/ADDR0">
+      <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="P1[2]" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="/ADDR1">
+      <node ref="JP1" pin="5" pinfunction="A" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="P1[4]" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/EVENT">
+      <node ref="U1" pin="2" pinfunction="P2[7]" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/I2C_SCL">
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/I2C_SDA">
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="/XRES">
+      <node ref="U1" pin="26" pinfunction="XRES" pintype="input"/>
+    </net>
+    <net code="7" name="GND">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="JP1" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="JP1" pin="6" pinfunction="B" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U1" pin="47" pinfunction="VSS2" pintype="power_in"/>
+      <node ref="U1" pin="49" pinfunction="Center_Pad" pintype="power_in"/>
+    </net>
+    <net code="8" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="48" pinfunction="(INT)P0[1]" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="Net-(J2-Pad1)">
+      <node ref="U1" pin="25" pinfunction="P1[6]" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="Net-(J2-Pad2)">
+      <node ref="U1" pin="27" pinfunction="P3[0]" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="Net-(J2-Pad3)">
+      <node ref="U1" pin="28" pinfunction="P3[2]" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="Net-(J2-Pad4)">
+      <node ref="U1" pin="29" pinfunction="P3[4]" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="Net-(J2-Pad5)">
+      <node ref="U1" pin="30" pinfunction="P3[6]" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="Net-(J2-Pad6)">
+      <node ref="U1" pin="31" pinfunction="P4[0]" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="Net-(J2-Pad7)">
+      <node ref="U1" pin="32" pinfunction="P4[2]" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="Net-(J2-Pad8)">
+      <node ref="U1" pin="33" pinfunction="P2[0]" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="Net-(J2-Pad9)">
+      <node ref="U1" pin="34" pinfunction="P2[2]" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="Net-(J2-Pad10)">
+      <node ref="U1" pin="35" pinfunction="P2[4]" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="Net-(J2-Pad11)">
+      <node ref="U1" pin="36" pinfunction="P2[6]" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="Net-(J2-Pad12)">
+      <node ref="U1" pin="37" pinfunction="P0[0]" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="Net-(J2-Pad13)">
+      <node ref="U1" pin="38" pinfunction="P0[2]" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="Net-(J2-Pad14)">
+      <node ref="U1" pin="39" pinfunction="P0[4]" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="Net-(J2-Pad15)">
+      <node ref="U1" pin="40" pinfunction="P0[6]" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="Net-(J3-Pad1)">
+      <node ref="U1" pin="44" pinfunction="P0[7]" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="Net-(J3-Pad2)">
+      <node ref="U1" pin="45" pinfunction="P0[5]" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="Net-(J3-Pad3)">
+      <node ref="U1" pin="46" pinfunction="(INT)P0[3]" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="Net-(J3-Pad4)">
+      <node ref="U1" pin="3" pinfunction="P2[5]" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="Net-(J3-Pad5)">
+      <node ref="U1" pin="4" pinfunction="P2[3]" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="Net-(J3-Pad6)">
+      <node ref="U1" pin="5" pinfunction="P2[1]" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="Net-(J3-Pad7)">
+      <node ref="U1" pin="6" pinfunction="P4[3]" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="Net-(J3-Pad8)">
+      <node ref="U1" pin="7" pinfunction="P4[1]" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="Net-(J3-Pad9)">
+      <node ref="U1" pin="8" pinfunction="P3[7]" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="Net-(J3-Pad10)">
+      <node ref="U1" pin="9" pinfunction="P3[5]" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="Net-(J3-Pad11)">
+      <node ref="U1" pin="10" pinfunction="P3[3]" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="Net-(J3-Pad12)">
+      <node ref="U1" pin="11" pinfunction="P3[1]" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="Net-(J3-Pad13)">
+      <node ref="U1" pin="12" pinfunction="(SCL)P1[7]" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="Net-(J3-Pad14)">
+      <node ref="U1" pin="13" pinfunction="(SDA)P1[5]" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="Net-(J3-Pad15)">
+      <node ref="U1" pin="16" pinfunction="P1[3]" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="(PR/SCL)P1[1]" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="(PR/SDA)P1[0]" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="VCC">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="JP1" pin="4" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U1" pin="41" pinfunction="VDD2" pintype="power_in"/>
+    </net>
+    <net code="44" name="unconnected-(U1-Pad1)">
+      <node ref="U1" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U1-Pad14)">
+      <node ref="U1" pin="14" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U1-Pad15)">
+      <node ref="U1" pin="15" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U1-Pad19)">
+      <node ref="U1" pin="19" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-Pad20)">
+      <node ref="U1" pin="20" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-Pad42)">
+      <node ref="U1" pin="42" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-Pad43)">
+      <node ref="U1" pin="43" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

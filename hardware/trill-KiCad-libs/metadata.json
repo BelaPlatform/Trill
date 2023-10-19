@@ -1,0 +1,35 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "TRILL library",
+    "description": "TRILL library for KiCad",
+    "description_full": "Symbols, tootprints and 3D Models for KiCad, made for TRILL by Bela",
+    "identifier": "com.github.com.github.belaplatform",
+    "type": "library",
+    "author": {
+        "name": "Bela Platform",
+        "contact": {
+            "web": "https://bela.io"
+        }
+    },
+    "maintainer": {
+        "name": "Bela Team",
+        "contact": {
+            "web": "https://bela.io"
+        }
+    },
+    "license": "CC0-1.0",
+    "resources": {
+        "homepage": "https://github.com/BelaPlatform/"
+    },
+    "versions": [
+        {
+            "version": "1.0",
+            "status": "stable",
+            "kicad_version": "7.00",
+            "download_sha256": "YOUR_SHA256_HERE",
+            "download_size": 1234,
+            "download_url": "https://github.com/BelaPlatform/trill",
+            "install_size": 5678
+        }
+    ]
+} 

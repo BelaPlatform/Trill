@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "TRILL")(type "KiCad")(uri "/home/mxa/Code/Bela/trill-private/hardware/trill-KiCad-libs/footprints/TRILL.pretty")(options "")(descr ""))
+)

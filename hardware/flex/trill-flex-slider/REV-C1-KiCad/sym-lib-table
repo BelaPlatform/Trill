@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "trill-flex")(type "Legacy")(uri "/home/mxa/Code/Bela/trill-private/hardware/flex/trill-flex-kicad-libraries/trill-flex.lib")(options "")(descr ""))
+  (lib (name "TRILL")(type "KiCad")(uri "/home/mxa/Code/Bela/trill-private/hardware/trill-KiCad-libs/symbols/TRILL.kicad_sym")(options "")(descr ""))
+)
