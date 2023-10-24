@@ -18,7 +18,7 @@ This repo contains the editable PCB designs and manufacturing files for Trill se
 
 ### Licensing: PCB designs
 
-All Trill hardware design files are licensed under a [Creative Commons Attribution Sharealike 3.0 license (or CC-BY-SA)](http://creativecommons.org/licenses/by-sa/3.0/), meaning that you can freely use these for your own projects provided you supply attribution and a link to this repo, and release your own design files under the same licesnse. [Read more about CC-BY-SA on the Creative Commons site](http://creativecommons.org/licenses/by-sa/3.0/).
+All Trill hardware design files are licensed under a [Creative Commons Attribution Sharealike 4.0 license (or CC-BY-SA)](http://creativecommons.org/licenses/by-sa/4.0/), meaning that you can freely use these for your own projects provided you supply attribution and a link to this repo, and release your own design files under the same licesnse. [Read more about CC-BY-SA on the Creative Commons site](http://creativecommons.org/licenses/by-sa/3.0/).
 
 ### Licensing: Firmware
 
@@ -26,7 +26,7 @@ Trill firmware is the code that's flashed to each Trill sensor, and this firmwar
 
 ### Licensing: Commercial
 
-It's possible to use Trill design files and firmware for a commercial projects free of charge under [CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/) (hardware) and [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) (firmware). Both licenses allow you to use these assets yourself under the license requirements (which include releasing any changes you make to the designs under the same license).
+It's possible to use Trill design files and firmware for a commercial projects free of charge under [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) (hardware) and [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) (firmware). Both licenses allow you to use these assets yourself under the license requirements (which include releasing any changes you make to the designs under the same license).
 
 If you want to use Trill design files *but not provide attribution and/or not release your source code* - for example, because you want to create something to sell using these files but don't want to make your source files public and linked to this repo - this is still possible, but requires a commercial license. Bela can provide you with a commercial licesnse that fits your project and its scope, starting at £500 for 500 pieces. Get in touch with the Bela team at info@bela.io to discuss your product and the license that's right for you. 
 
