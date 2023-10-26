@@ -517,7 +517,7 @@
         )
         (width 0.1) (fill yes))
     ) (tstamp 16165098-819e-49b4-bd2d-481f9406bfc1))
-  (model "/home/max/Code/BELA/trill-private/hardware/trill-KiCad-libs/3dmodels/3d-library.3dshapes/trill-craft.step"
+  (model "../../3dmodels/3d-library.3dshapes/trill-craft.step"
     (offset (xyz -24.7 10.2 1.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
