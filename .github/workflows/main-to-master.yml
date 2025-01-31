@@ -1,0 +1,21 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-legacy-master:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - name: Push
+      run: |
+        git fetch --unshallow
+        git pull
+        git checkout master
+        git merge --ff main
+        git push origin
